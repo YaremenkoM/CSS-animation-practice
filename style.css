@@ -1,0 +1,209 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.position {
+	position: relative;
+}
+
+.colors-box{
+	display: flex;
+	width: 90%;
+	height: 90%;
+	justify-content: space-between;
+	align-items: center;
+
+	animation-name: enire-b-animation;
+    animation-duration: 100s;
+ /*   animation-timing-function: ease-in; */
+    animation-delay: 1s; 
+    animation-iteration-count: infinite;
+ /*   animation-direction: reverse; 
+    animation-fill-mode: forwards;
+    animation-play-state: paused;  */
+
+}
+
+.position *{
+	position: absolute;
+	min-width: 70px;
+	min-height: 70px;
+	opacity: 0.3;
+/*	transform: rotate(-15deg); */
+
+	animation-name: el-animation;
+    animation-duration: 100s;
+ /*   animation-timing-function: ease-in; */
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+ /*   animation-direction: reverse; 
+    animation-fill-mode: forwards;
+    animation-play-state: paused;  */
+}
+
+.red { background-color: #d6471c; }
+
+.orange { background-color: #d6a81c; }
+
+.yellow { background-color: #d6d61c; }
+
+.salad { background-color: #85d61c; }
+
+.green { background-color: #1cd628; }
+
+.sea { background-color: #1cd670; }
+
+.coral { background-color: #1cd6b7; }
+
+.blue { background-color: #1c6dd6; }
+
+.deep_blue { background-color: #3e1cd6; }
+
+.violet { background-color: #881cd6; }
+
+
+@keyframes el-animation {
+	0% {
+		transform: scale(1) rotate(0deg) skew(0deg, 0deg);
+	} 
+
+	2% {
+		transform: scale(1.3) rotate(90deg);
+	} 
+
+	4% {
+		transform: scale(1) rotate(180deg);
+	}
+
+	6% {
+		transform: scale(1.3) rotate(90deg);
+	} 
+
+	8% {
+		transform: scale(1) rotate(0deg);
+		opacity: 0.3;
+	}
+
+	11% {
+		transform: scale(1.5) rotate(105deg) skew(15deg, 15deg);
+		opacity: 1;
+	} 
+
+	13% {
+		transform: scale(1) skew(0deg,0deg);
+	} 
+
+	15% {
+		opacity: 0.3;
+	}
+
+	26% {
+		transform: scale(1) rotate(-180deg);
+		opacity: 0.3;
+	}
+
+	28% {
+		transform: scale(1) rotate(360deg);
+		opacity: 1;
+	}
+
+	31% {
+		transform: scale(1) rotate(0deg);
+		opacity: 0.3;
+	}
+
+
+} 
+
+@keyframes enire-b-animation {
+	0% {
+		width: 90%;
+	} 
+
+	2% {
+		width: 1px;
+		transform:  rotate(90deg); 
+	} 
+
+	4% {
+		width: 90%;
+		transform:  rotateY(180deg); 
+	}
+
+	6% {
+		width: 1px;
+	} 
+
+	8% {
+		width: 90%;
+		transform:  rotateY(0deg); 
+	}
+
+	10% {
+		width: 1px;
+		transform:  rotate(-145deg); 
+	} 
+
+	12% {
+		width: 90%;
+	}
+
+	18% {
+		width: 90%;
+		transform:  rotate(0deg);
+	}
+
+	20% {
+		width:1px;
+	}
+
+	25% {
+		width: 26%;
+	}
+
+
+	32% {
+		transform:  rotate(180deg);
+		width: 90%;
+	}
+
+	33% {
+		transform:  rotate(0deg);
+		width: 1px;
+	} 
+
+	36% {
+		width: 1px;
+/*		transform:  rotateY(0deg); */
+	} 
+
+} 
+
+  @keyframes ending {
+	0% {
+		width: 90%;
+	} 
+
+	50% {
+		width: 1px;
+		transform: rotateY(0deg); 
+	} 
+	100% {
+		width: 90%;
+		transform: rotateY(90deg); 
+		display: none;
+	}
+} 
